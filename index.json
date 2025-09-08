@@ -1,0 +1,52 @@
+{
+  "cats": {
+    "name": "cats",
+    "followers": 25000,
+    "following": 5,
+    "posts": [
+      {
+        "image": "images/pexels-pixabay-45201.jpg",
+        "likes": 200,
+        "comments": 17,
+        "description": "Check the vibe"
+      },
+      {
+        "image": "images/pexels-kowalievska-1170986.jpg",
+        "likes": 300,
+        "comments": 20,
+        "description": "Look the hairs"
+      },
+      {
+        "image": "images/pexels-kmerriman-20787.jpg",
+        "likes": 750,
+        "comments": 40,
+        "description": "Look like baby"
+      }
+    ]
+  },
+  "dogs": {
+    "name": "dogs",
+    "followers": 30000,
+    "following": 10,
+    "posts": [
+      {
+        "image": "images/pexels-gilberto-reyes-259461-825947.jpg",
+        "likes": 300,
+        "comments": 17,
+        "description": "Body of my dog"
+      },
+      {
+        "image": "images/pexels-hnoody93-58997.jpg",
+        "likes": 400,
+        "comments": 20,
+        "description": "Check The body"
+      },
+      {
+        "image": "images/pexels-katlovessteve-551628.jpg",
+        "likes": 850,
+        "comments": 40,
+        "description": "Woof, Woof!!"
+      }
+    ]
+  }
+}

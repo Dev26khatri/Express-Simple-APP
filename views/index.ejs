@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= data.name %> Profile</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background: #f9f9f9;
+      }
+      h2,
+      h3 {
+        color: #333;
+      }
+      .profile {
+        margin-bottom: 20px;
+      }
+      .post {
+        border: 1px solid #ddd;
+        background: #fff;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      img {
+        max-width: full;
+        max-height: 300px;
+        height: auto;
+        border-radius: 6px;
+      }
+      h5,
+      p {
+        margin: 5px 0;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile">
+      <h2>@<%= data.name %></h2>
+      <p>Followers: <%= data.followers %></p>
+      <p>Following: <%= data.following %></p>
+    </div>
+
+    <% for (let post of data.posts) { %>
+    <div class="post">
+      <img src="/<%= post.image %>" alt="<%= data.name %> picture" />
+      <h5>Likes: <%= post.likes %></h5>
+      <h5>Comments: <%= post.comments %></h5>
+      <p>Description: <%= post.description %></p>
+    </div>
+    <% } %>
+  </body>
+</html>

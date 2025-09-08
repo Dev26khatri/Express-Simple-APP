@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Name is :<%= data.name %></h3>
+    <% for (let post of data.posts) { %>
+    <img src="/images/ <%= post.image%>" alt="<%= data.name %>picture" />
+    <h5>Likes:<%= post.likes %></h5>
+    <h5>Comments : <%=post.comments %></h5>
+    <p>Description : <%= post.description %></p>
+    <%} %>
+  </body>
+</html>
